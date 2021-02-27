@@ -18,17 +18,13 @@ func main() {
 
 func isPrime(num int) bool {
 	half := num / 2
-
 	if num == 1 || num == 2 {
 		return true
 	}
-
 	for i := 2; i <= half; i++ {
 		if num%i == 0 {
 			return false
 		}
 	}
-
-	return true
-
+	return false
 }
